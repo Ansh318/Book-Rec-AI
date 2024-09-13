@@ -16,15 +16,7 @@ LibraVerse aims to create an immersive, AI-powered learning environment where us
 5. Payment System: Secure payment gatrway integration with platforms like CashApp, Venmo, Bank Transfer to facilitate book purchases.
 
 
-
 ## Technology Stack
-
-Data (API):
-Backend tools: Python, SQL and Flask
-Frontend tools: Swift UI (iOS)
-App deployment with Heroku and Git
-Version Control: Gitlab
-UI Design: Figma
 
 
 ## Installation Guide
