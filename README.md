@@ -1,8 +1,23 @@
-# Book-Rec-AI
-Build a AI tool that recommends books that uses GPT-3 models to provide personalized book suggestions to its users based on user book description and/or individual reading preferances.
+# LibraVerse - Virtual Library 
+
+LibraVerse aims to create an immersive, AI-powered learning environment where users can explore, borrow, and purchase virtual books while engaging with a community of learners. The platform features an AI Librarian that assists users in navigating the library, a personalized recommendation system, and a secure payment gateway for purchasing books. By integrating machine learning algorithms and Natural Language Processing, the platform provides an interactive, user-centered expereince for both casual readers and dedicated learners.
 
 
-Tech stack
+## Features
+
+1. AI Librarian: A virtual assistant that helps users find books, offer summaries, and answer user queries in real time.
+
+2. Recommendation System: Provides personalized book suggets based on users' reading history, preferences, and learning goals.
+
+3. Virtual Book Collection: An extensive collection of digital books that users can borrow or purchase. 
+
+4. Community Engagement: Users can interact through book reviews, virtual book clubs, and discussion forums.
+
+5. Payment System: Secure payment gatrway integration with platforms like CashApp, Venmo, Bank Transfer to facilitate book purchases.
+
+
+
+## Technology Stack
 
 Data (API):
 Backend tools: Python, SQL and Flask
@@ -12,21 +27,12 @@ Version Control: Gitlab
 UI Design: Figma
 
 
-Objective
+## Installation Guide
 
-A book recommendation app that suggests books to read based on a user's reading preferences and user-user similarities. 
-Users input their favorite books. The model uses the book’s reviews/ratings, length, genre, and author to generate personalized book recommendations.
 
-Examples
-1. https://readow.ai/
-2. https://medium.com/@amitdlmlai/book-recommendation-system-61bf9284f659
-3. https://www.kaggle.com/code/omarzaghlol/goodreads-2-book-recommender-system
+## Usage
+
+## Resources
 
 
 
-Models
-Item Based Collab Filtering: 
-  SVD (Singular-Valued Decomposition)
-User-Based Collab Filtering: 
-  User-User Similarity Recommendation
-  Library - surprise
