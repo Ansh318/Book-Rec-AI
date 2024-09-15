@@ -1,5 +1,12 @@
 from langchain_openai import ChatOpenAI
-class ModelConfig:
+from dotenv import load_dotenv
+load_dotenv()
+import os
+
+os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
+
+
+class ModelConfigManager:
 
     def __init__(self, model_name, temperature, max_retries):
         self.model_name = model_name
@@ -14,7 +21,7 @@ class ModelConfig:
         )
         return llm
     
-params = ModelConfig("gpt-4", "0", "1")
+params = ModelConfigManager("gpt-4", "0", "1")
 params.model()
 
 
