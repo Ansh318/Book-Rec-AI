@@ -1,4 +1,9 @@
-from langchain.prompts import PromptTemplate
+from langchain_core.messages import SystemMessage
+from langchain_core.prompts import (
+    ChatPromptTemplate,
+    HumanMessagePromptTemplate,
+    MessagesPlaceholder,
+)
 from dotenv import load_dotenv
 load_dotenv()
 import os
@@ -27,14 +32,26 @@ class PromptManager:
         except Exception as e:
             return f"Encountered unexpected error due to {e}"
 
-    def create_prompt(self, prompt_id,input_variables):
+    def create_prompt(self, prompt_id):
         """
         Initalize and Return Prompt Instance 
         """
         try:
             self.read_prompt()
             content = self.prompts[prompt_id]['content']
-            prompt = PromptTemplate(template=content, input_variables=input_variables)
+            prompt = ChatPromptTemplate(
+                [
+                    SystemMessage(
+                        content = content
+                    ),
+                    MessagesPlaceholder(
+                        variable_name = 'chat_history'
+                    ),
+                    HumanMessagePromptTemplate.from_template(
+                        "{human_input}"
+                    ),
+                ]
+            )
             return prompt
         except ValueError as ve:
             return f"Value error: {ve}"
