@@ -44,4 +44,3 @@ class PromptManager:
             return f"An unexpected error occured due to {e}"
     
 prompt_manager = PromptManager()
-print(prompt_manager.create_prompt("System Prompt", ['query']))
