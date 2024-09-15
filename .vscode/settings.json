@@ -1,0 +1,6 @@
+{
+    "docker.dockerPath": "/Applications/Docker.app",
+    "markdown.copyFiles.destination": {
+        "1": "0"
+    }
+}
