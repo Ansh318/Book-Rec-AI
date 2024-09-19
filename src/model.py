@@ -2,6 +2,7 @@ from prompts import PromptManager
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import LLMChain
 from modelConfig import ModelConfigManager
+from vectorDB import WeaviateVectorStore
 
 class OpenAIModel:
 
