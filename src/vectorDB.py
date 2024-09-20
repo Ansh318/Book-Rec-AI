@@ -9,15 +9,15 @@ class WeaviateVectorStore:
 
     def connect_weaviate(self):
         self.client = weaviate.connect_to_local(headers = {"X-OpenAI-Api-Key": os.getenv("OPENAI_API_KEY")})
+        return self.client
+    
+    def create_schema(self):
         self.client.collections.create(
             "BookInventory",
             properties = [
                 Property(name = "BookDescription", data_type= DataType.TEXT)
             ]
         )
-        self.client.close()
-        return self.client
-
 
     def read_txt_file(self,file_path):
         """
@@ -40,17 +40,16 @@ class WeaviateVectorStore:
 
 
     def write_to_db(self, data):
-        for description in data:
-            self.client.data_object.create(
-                {
-                    "Book Description": description
-                },
-                "Book Inventory"
-            )
+        pass
+    def search_vector():
+        pass
 
     def close_connection(self):
         if self.client != None:
             self.client.close()
+            self.client = None
+
+    
     
 
 vector_store = WeaviateVectorStore()

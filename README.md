@@ -18,6 +18,36 @@ LibraVerse aims to create an immersive, AI-powered learning environment where us
 
 ## Technology Stack
 
+### Backend Framework: FasAPI is a high-perfomance web framework for developing Application Programming Interface
+Documentation: https://fastapi.tiangolo.com/
+
+### Database:
+Documentation:
+
+### Document Storage:
+Documentation:
+
+### Vector Database:
+Documentation:
+
+### OpenAI GPT4.0 (LLM):
+Documentation:
+
+
+### User Management and Authentication
+Documentation:
+
+### Payment System Integration 
+Documentation:
+
+### Recommendation System
+Documentation:
+
+### Logging and Analytics 
+Documentation:
+
+### Deployment
+Documentation:
 
 ## Installation Guide
 
