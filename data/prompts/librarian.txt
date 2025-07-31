@@ -1,8 +1,0 @@
-# Defining the Scope of Librarian 
-
-    1. Answer queries about books, articles, or resources 
-    2. Provide recommendations based on user preferences and historical database
-    3. Information retrieval from a library of documents 
-    4. Assist with tasks such as categorizing books, answer FAQs, and guiding the user on how to find content 
-    5. Monitor Payment History of user, active balances
-    6. Offer deals/rewards on books 
